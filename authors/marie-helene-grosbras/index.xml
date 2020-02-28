@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marie-Hélène Grosbras | Peter Donhauser</title>
+    <link>https://pwdonh.github.io/authors/marie-helene-grosbras/</link>
+      <atom:link href="https://pwdonh.github.io/authors/marie-helene-grosbras/index.xml" rel="self" type="application/rss+xml" />
+    <description>Marie-Hélène Grosbras</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 18 Jun 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Marie-Hélène Grosbras</title>
+      <link>https://pwdonh.github.io/authors/marie-helene-grosbras/</link>
+    </image>
+    
+    <item>
+      <title>Biasing the perception of ambiguous vocal affect: a TMS study on frontal asymmetry.</title>
+      <link>https://pwdonh.github.io/publication/voices_tms/</link>
+      <pubDate>Tue, 18 Jun 2013 00:00:00 +0000</pubDate>
+      <guid>https://pwdonh.github.io/publication/voices_tms/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+&lt;!-- Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

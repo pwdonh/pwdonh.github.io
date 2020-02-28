@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Peter Donhauser</title>
+    <link>https://pwdonh.github.io/authors/</link>
+      <atom:link href="https://pwdonh.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 02 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Authors</title>
+      <link>https://pwdonh.github.io/authors/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>https://pwdonh.github.io/authors/admin/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://pwdonh.github.io/authors/admin/</guid>
+      <description>&lt;p&gt;Postdoc at the Montreal Neurological Institute in Montreal, Canada.&lt;/p&gt;
+&lt;p&gt;Interested in understanding speech processing in the human brain using electrophysiology and neural network models.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sylvain Baillet</title>
+      <link>https://pwdonh.github.io/authors/sylvain-baillet/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://pwdonh.github.io/authors/sylvain-baillet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Esther Florin</title>
+      <link>https://pwdonh.github.io/authors/esther-florin/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://pwdonh.github.io/authors/esther-florin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Andreas G. Rösch</title>
+      <link>https://pwdonh.github.io/authors/andreas-g.-rosch/</link>
+      <pubDate>Tue, 10 Mar 2015 00:00:00 +0000</pubDate>
+      <guid>https://pwdonh.github.io/authors/andreas-g.-rosch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oliver C. Schultheiss</title>
+      <link>https://pwdonh.github.io/authors/oliver-c.-schultheiss/</link>
+      <pubDate>Tue, 10 Mar 2015 00:00:00 +0000</pubDate>
+      <guid>https://pwdonh.github.io/authors/oliver-c.-schultheiss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marie-Hélène Grosbras</title>
+      <link>https://pwdonh.github.io/authors/marie-helene-grosbras/</link>
+      <pubDate>Tue, 18 Jun 2013 00:00:00 +0000</pubDate>
+      <guid>https://pwdonh.github.io/authors/marie-helene-grosbras/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pascal Belin</title>
+      <link>https://pwdonh.github.io/authors/pascal-belin/</link>
+      <pubDate>Tue, 18 Jun 2013 00:00:00 +0000</pubDate>
+      <guid>https://pwdonh.github.io/authors/pascal-belin/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
