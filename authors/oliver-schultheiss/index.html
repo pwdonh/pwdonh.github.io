@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Postdoc in Neuroscience">
+  <meta name="description" content="Postdoctoral Fellow">
 
   
   <link rel="alternate" hreflang="en-us" href="/authors/oliver-schultheiss/">
@@ -39,7 +39,7 @@
   
   
   
-  <meta name="theme-color" content="#2962ff">
+  <meta name="theme-color" content="hsl(250, 90%, 68%)">
   
 
   
@@ -63,8 +63,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
         
       
     
@@ -206,11 +206,49 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108904361-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-108904361-1', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
   
-  <link rel="alternate" href="/authors/oliver-schultheiss/index.xml" type="application/rss+xml" title="Peter W. Donhauser">
+  <link rel="alternate" href="/authors/oliver-schultheiss/index.xml" type="application/rss+xml" title="Peter Donhauser">
   
 
   <link rel="manifest" href="/index.webmanifest">
@@ -230,10 +268,10 @@
   
   <meta property="twitter:card" content="summary">
   
-  <meta property="og:site_name" content="Peter W. Donhauser">
+  <meta property="og:site_name" content="Peter Donhauser">
   <meta property="og:url" content="/authors/oliver-schultheiss/">
-  <meta property="og:title" content="Oliver Schultheiss | Peter W. Donhauser">
-  <meta property="og:description" content="Postdoc in Neuroscience"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="og:title" content="Oliver Schultheiss | Peter Donhauser">
+  <meta property="og:description" content="Postdoctoral Fellow"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2015-03-10T00:00:00&#43;00:00">
@@ -245,6 +283,36 @@
 
 
   
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "hsl(250, 90%, 68%)",
+          "text": "#fff"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "hsl(250, 90%, 68%)"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "/privacy/"
+      }
+    })});
+  </script>
+
 
 
   
@@ -253,11 +321,11 @@
 
 
 
-  <title>Oliver Schultheiss | Peter W. Donhauser</title>
+  <title>Oliver Schultheiss | Peter Donhauser</title>
 
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -304,7 +372,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Peter W. Donhauser</a>
+      <a class="navbar-brand" href="/">Peter Donhauser</a>
     </div>
     
 
@@ -317,7 +385,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Peter W. Donhauser</a>
+      <a class="navbar-brand" href="/">Peter Donhauser</a>
     </div>
     
 
@@ -381,7 +449,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
         </li>
 
         
@@ -432,6 +500,35 @@
         
 
         <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
           <a class="nav-link " href="/#contact"><span>Contact</span></a>
         </li>
 
@@ -451,10 +548,6 @@
       </li>
       
 
-      
-      <li class="nav-item">
-        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-      </li>
       
 
       
@@ -487,7 +580,7 @@
       <ul>
         
         <li>
-          <a href="/publication/voices_tms/">Biasing the perception of ambiguous vocal affect: a TMS study on frontal asymmetry.</a>
+          <a href="/publication/faces_motive/">The implicit need for power predicts recognition speed for dynamic changes in facial expressions of emotion</a>
         </li>
         
       </ul>
@@ -530,7 +623,7 @@
 
     
     
-    <script>const isSiteThemeDark = false;</script>
+    <script>const isSiteThemeDark = true;</script>
     
 
     

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Oliver Schultheiss | Peter W. Donhauser</title>
+    <title>Oliver Schultheiss | Peter Donhauser</title>
     <link>/authors/oliver-schultheiss/</link>
       <atom:link href="/authors/oliver-schultheiss/index.xml" rel="self" type="application/rss+xml" />
     <description>Oliver Schultheiss</description>
@@ -13,10 +13,10 @@
     </image>
     
     <item>
-      <title>Biasing the perception of ambiguous vocal affect: a TMS study on frontal asymmetry.</title>
-      <link>/publication/voices_tms/</link>
+      <title>The implicit need for power predicts recognition speed for dynamic changes in facial expressions of emotion</title>
+      <link>/publication/faces_motive/</link>
       <pubDate>Tue, 10 Mar 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/voices_tms/</guid>
+      <guid>/publication/faces_motive/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
