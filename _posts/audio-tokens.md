@@ -1,0 +1,151 @@
+---
+title: 'Audio-Tokens'
+date: 2022-03-01
+permalink: /posts/3-audio-tokens/
+tags:
+---
+
+Working in the lab of [Denise Klein](https://scholar.google.ca/citations?user=MeXJTmoAAAAJ&hl=en&oi=ao), I was involved in multiple studies where participants had to rate, sort or compare audio recordings from different speakers, e.g. second-language learners, bilingual speakers, etc. In behavioral experiments, participants are usually presented with an audio recording and subsequently asked to rate it on one or multiple dimensions. We tried to come up with more efficient methods to collect those ratings, allowing e.g. multiple recordings to be rated/sorted/compared at the same time. This resulted in a set of Javascript tools, that we now want to share publicly. The main feature of the toolbox is that audio recordings are associated with visual tokens that control audio playback and can be manipulated using mouse click-and-drag in order to place a rating.
+
+The rating tools are available to use as a plugin for the popular online experiment package jsPsych, but can also be used in a custom setup using pure Javascript. The code and usage examples can be found [here](https://github.com/pwdonh/audio_tokens) and we have a preprint on PsyArXiv: 
+
+Donhauser, Peter, and Denise Klein. 2021. “Audio-tokens: A Toolbox for Rating, Sorting and Comparing Audio Samples in the Browser.” PsyArXiv. October 16. https://doi.org/10.31234/osf.io/3j58q
+
+## Feature / continuous ratings
+
+The simplest option is to let participants rate multiple audio recordings along one feature dimension. This could be e.g. accentedness of speakers uttering the same sentence. When you click on ‘Start’ in the example below, four coloured circles will appear (*tokens*) alongside a rectangular box (*arena*). Each token represents an audiofile (here a speaker); when you hover over them with the mouse, the corresponding audio will play through the browser. This should work on **Chrome and Firefox**. You can click on the tokens and drag them horizontally to place the rating. When all tokens have been placed in the arena, you will be able to submit the ratings using the button.
+
+ <iframe src="https://pwdonh.github.io/audio_tokens/index_query.html?type=single_feature" width="100%" height="250" frameBorder="0"></iframe>
+
+<!--
+<div class="container" style="margin-bottom:25px;">
+  <div class="d-flex justify-content-center">
+    <div id="button-container-accent" class="btn-group" style="margin-bottom:25px">
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="plot-speakers-div-accent">
+      <svg id="plot-speakers-accent" width="400" height="180">
+  </div>
+</div> -->
+
+The audio files in this example were taken from Mozilla's [Common Voice](https://commonvoice.mozilla.org/) speech corpus. 
+
+If the researcher wants to ensure that participants listen to the audio stimuli in full, there is an option to enforce this. Tokens will stay translucent until the participant has fully listened to the corresponding audio stimulus. The submit button will be disabled until all audio stimuli have been finished.
+
+ <iframe src="https://pwdonh.github.io/audio_tokens/index_query.html?type=single_feature&force_listen=true" width="100%" height="250" frameBorder="0"></iframe>
+
+All other interfaces follow the same principle. Different rating types are implemented by changing the arena layout and placement of tokens, constraining the dragging operations, as well as adding lines to represent connections between different tokens.
+
+The next example allows for collecting ratings along multiple feature dimensions. An example of this would be rating clinically relevant features of speech impairments e.g. Voice quality, Articulation and Prosody. In the following example three different arenas will appear corresponding to three feature dimensions. Tokens with the same colour represent the same audio file. Just like in the previous example, you can drag tokens horizontally to place a rating. While hovering over a token, lines will appear that connect corresponding tokens. This can help the participants by visualising a given audio file's profile across the rated features. Again, in order submit the ratings, all tokens have to be dragged into the arena.
+
+ <iframe src="https://pwdonh.github.io/audio_tokens/index_query.html?type=multiple_feature" width="100%" height="550" frameBorder="0"></iframe>
+
+As a special case, the plugin allows ratings along two features to be performed in one arena, by allowing both horizontal and vertical dragging operations. An example would be rating emotional content of speech or music along the dimensions Valence and Arousal. Lines appear during dragging operations as a visual aid: they connect the current token to the corresponding positions on the vertical and horizontal axis.
+
+<!-- <div class="container" style="margin-bottom:25px">
+  <div class="d-flex justify-content-center">
+    <div id="button-container-square" class="btn-group" style="margin-bottom:25px">
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="plot-speakers-div-square">
+      <svg id="plot-speakers-square" width="400" height="350">
+    </div>
+</div> -->
+
+ <iframe src="https://pwdonh.github.io/audio_tokens/index_query.html?type=features2d" width="100%" height="475" frameBorder="0"></iframe>
+
+## Categorical ratings / Sorting
+
+Some research questions might require participants to sort audio recordings into discrete categories. In one scenario the categories are specified by the experimenter, for example in quality control (keep or reject). Another example of this is voice identity sorting: participants are asked to sort utterances recorded from two different  speakers. When you click on 'Start', several tokens will appear and two arenas labelled as 'Category 1' and 'Category 2'.  Tokens can be placed in the two arenas representing the two categories. We do not record where in the arena the tokens are dropped, since this is a discrete rating. Categories can be labelled as shown here, or they can be left blank if the question is less constrained ("Please sort these recordings into two piles.").
+
+ <iframe src="https://pwdonh.github.io/audio_tokens/index_query.html?type=categories" width="100%" height="350" frameBorder="0"></iframe>
+
+<!-- <div class="container" style="margin-bottom:25px">
+  <div class="d-flex justify-content-center">
+    <div id="button-container-freesort" class="btn-group" style="margin-bottom:25px">
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="plot-speakers-div-freesort">
+      <svg id="plot-speakers-freesort" width="400" height="250">
+    </div>
+</div> -->
+
+In the other scenario, both the number of categories and their labels are kept unspecified. Participants are asked to sort the recordings into as many categories as deemed appropriate. Below you can try this interface: We place tokens around a circular arena, tokens can be dragged freely within the arena. Clusters are formed dynamically when tokens are placed close to each other: all tokens of the current cluster are highlighted by connecting lines.
+
+ <iframe src="https://pwdonh.github.io/audio_tokens/index_query.html?type=cluster" width="100%" height="500" frameBorder="0"></iframe>
+
+<!-- <div class="container" style="margin-bottom:25px">
+  <div class="d-flex justify-content-center">
+    <div id="button-container-circlesort" class="btn-group" style="margin-bottom:25px">
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="plot-speakers-div-circlesort">
+      <svg id="plot-speakers-circlesort" width="400" height="400">
+    </div>
+</div> -->
+
+## Similarity ratings
+
+As the most unconstrained form of rating, we provide an interface for similarity ratings where participants are free to place tokens in a circular arena. In contrast to the previous interface, the actual placement coordinates are recorded in the results. In addition, connecting lines are drawn between the currently dragged token and all others while stroke width is scaled by the distance between tokens: this serves as a visual analogue for stimulus similarity. Note that this can be quite a complex task, especially as the number of tokens increases.
+
+ <iframe src="https://pwdonh.github.io/audio_tokens/index_query.html?type=similarity" width="100%" height="500" frameBorder="0"></iframe>
+
+<!-- <div class="container" style="margin-bottom:25px">
+  <div class="d-flex justify-content-center">
+    <div id="button-container-similarity" class="btn-group" style="margin-bottom:25px">
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="plot-speakers-div-similarity">
+      <svg id="plot-speakers-similarity" width="400" height="400">
+    </div>
+</div> -->
+
+The last option is to ask participants for judgements on relative similarity: Out of three stimuli, which one is the least similar to the other two (the odd-one-out). This interface differs from the others, since there are no dragging operations. Instead, three tokens are shown on the screen at a given time and the *odd-one-out* is selected by clicking. If a trial consists of only three stimuli, it ends here. If there are more than three stimuli, the selected token will disappear and a new token will appear at its place. The participant can make a new decision: which one is now the odd-one-out? Since the decisions are made by mouse click the trial ends automatically and there is no submit button.
+
+ <iframe src="https://pwdonh.github.io/audio_tokens/index_query.html?type=triplets" width="100%" height="250" frameBorder="0"></iframe>
+
+ <!-- <iframe src="https://pwdonh.github.io/audio_tokens/index_triplets" width="100%" height="600"></iframe> -->
+
+<!--
+adfadsf dfdf
+
+## Feature rating (multiple dimensions)
+
+sdfaa dfdf
+
+
+
+## 2D similarity ratings
+
+<div class="container" style="margin-bottom:25px">
+  <div class="d-flex justify-content-center">
+    <div id="button-container-similarity" class="btn-group" style="margin-bottom:25px">
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="plot-speakers-div-similarity">
+      <svg id="plot-speakers-similarity" width="400" height="400">
+    </div>
+</div> -->
+
+<!-- ## Triplet task
+
+<iframe allowtransparency="false" style="background: #FFFFFF;" src="https://audioratings.peterdonhauser.com/index?type=triplets&num_speakers=8" width="450px" height="1000px"></iframe> -->
+
+<!-- <div class="container" style="margin-bottom:25px">
+  <div class="d-flex justify-content-center">
+    <div id="button-container-triplets" class="btn-group" style="margin-bottom:25px">
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="plot-speakers-div-triplets">
+      <svg id="plot-speakers-triplets" width="400" height="400">
+    </div>
+</div> -->
+
+<script src="main.js"></script>

@@ -1,7 +1,7 @@
 ---
 title: 'Predictive language model'
 date: 2019-12-09
-permalink: /pages/demos.html
+permalink: /posts/2-language-model/
 tags:
 ---
 
