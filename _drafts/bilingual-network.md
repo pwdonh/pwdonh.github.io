@@ -3,7 +3,6 @@ title: 'Audio-Tokens'
 date: 2022-03-01
 permalink: /posts/bilingual-networks/
 tags:
-hidden: true
 ---
 
 (This post is still hidden)
