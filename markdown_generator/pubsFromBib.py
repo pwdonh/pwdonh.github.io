@@ -26,16 +26,16 @@ import re
 
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
-    "proceeding": {
-        "file" : "proceedings.bib",
-        "venuekey": "booktitle",
-        "venue-pretext": "In the proceedings of ",
-        "collection" : {"name":"publications",
-                        "permalink":"/publication/"}
+    # "proceeding": {
+    #     "file" : "proceedings.bib",
+    #     "venuekey": "booktitle",
+    #     "venue-pretext": "In the proceedings of ",
+    #     "collection" : {"name":"publications",
+    #                     "permalink":"/publication/"}
         
-    },
+    # },
     "journal":{
-        "file": "pubs.bib",
+        "file": "donhauser.bib",
         "venuekey" : "journal",
         "venue-pretext" : "",
         "collection" : {"name":"publications",
@@ -66,7 +66,7 @@ for pubsource in publist:
         pub_day = "01"
         
         b = bibdata.entries[bib_id].fields
-        
+
         try:
             pub_year = f'{b["year"]}'
 
