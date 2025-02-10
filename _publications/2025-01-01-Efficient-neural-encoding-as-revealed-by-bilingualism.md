@@ -7,3 +7,5 @@ venue: 'PsyArxiv'
 paperurl: 'https://osf.io/m8vdj_v1'
 citation: ' Charlotte Moore*,  Peter Donhauser*,  Denise Klein,  Krista Byers-Heinlein, &quot;Efficient neural encoding as revealed by bilingualism.&quot; PsyArxiv, 2025.'
 ---
+
+![image](../images/bilingual.png)
