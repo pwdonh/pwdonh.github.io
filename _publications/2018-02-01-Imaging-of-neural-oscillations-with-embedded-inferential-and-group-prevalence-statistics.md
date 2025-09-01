@@ -7,3 +7,5 @@ venue: 'PLoS Computational Biology'
 paperurl: 'https://doi.org/10.1371/journal.pcbi.1005990'
 citation: ' Peter Donhauser,  Esther Florin,  Sylvain Baillet, &quot;Imaging of neural oscillations with embedded inferential and group prevalence statistics.&quot; PLoS Computational Biology, 2018.'
 ---
+
+![image](../images/ploscompbio.png)
